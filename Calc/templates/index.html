@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>page 1</h1>
+    <textarea name="" id="" cols="30" rows="10">Results
+
+        {{ans}}
+    </textarea>
+    <form action="/" method="GET">
+        <!-- event.preventDefault() -->
+        {% csrf_token %}
+
+        <input type="text" name="num1" id="">
+        <input type="text" name="num2" id="">
+        <input type="submit" value="sum" name="operator">
+        <input type="submit" value="mul" name="operator">
+        <input type="submit" value="sub" name="operator">
+        <input type="submit" value="div" name="operator">
+    </form>
+</body>
+</html>
